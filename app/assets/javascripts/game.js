@@ -1,6 +1,6 @@
 window.onload = function() {
 
-  (function () {
+  var x = function () {
     var leftKey     = null,
         rightKey    = null,
         downKey     = null,
@@ -10,8 +10,6 @@ window.onload = function() {
         scoreText   = null,
         score       = 0,
         spaceship   = null;
-
-    
 
     var game = new Phaser.Game(
       '99',
@@ -100,5 +98,5 @@ window.onload = function() {
     function setScoreText() {
       scoreText.text = "Score: " + score;
     }
-  })();
+  }
 };
